@@ -1,7 +1,7 @@
 import define, { jsh } from "https://unpkg.com/stateful-components@2.0.7/dist/index.js"
 const { a, img, div } = jsh
 
-define("web-container", {
+define("w-badge-container", {
     style() {
         return `
             div {
@@ -18,7 +18,7 @@ define("web-container", {
     }
 })
 
-define("web-badge", {
+define("w-badge", {
     style() {
         return `
             a {
