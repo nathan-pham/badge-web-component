@@ -21,3 +21,4 @@ Badges have three assignable properties: `type`, `tag`, and `src`.
 
 ## Screenshots
 ![badge](/screenshots/badge.png)
+![hover effect](/screenshots/hover-badge.png)
