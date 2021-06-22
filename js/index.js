@@ -1,4 +1,4 @@
-import define, { jsh as h } from "https://unpkg.com/stateful-components@2.1.0/dist/index.js"
+import define, { jsh as h, props } from "https://unpkg.com/stateful-components@2.1.1/dist/index.js"
 
 const images = {
     github: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
@@ -50,12 +50,7 @@ define("w-badge", {
     `,
     
     render(state, target) {
-        const props = {}
-        for(const key of target.getAttributeNames()) {
-            props[key] = target.getAttribute(key)
-        }
-
-        const {type="github", tag="nathan-pham", src} = props
+        const {type="github", tag="nathan-pham", src} = props(target)
 
         const href = `https://${type}.com/${tag}`
         const text = target.textContent || type
